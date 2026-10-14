@@ -1,0 +1,59 @@
+/* Kayra Patron 3.4 — internet modu, Wi-Fi modundaki uygulamayla aynı tasarım (kayra.css + app.css üzerine) */
+:root{--brand:#c8102e;--red:#c8102e;--muted:#66717c;--line:#e2e6ea}
+body{background:var(--bg)!important;color:var(--ink);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#app{min-height:100vh;display:flex;flex-direction:column}
+.k-top svg,.p-tiles svg,.k-row svg,.k-logo svg,.k-btn svg,.r-emptyic svg{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;background:none!important;position:static!important}
+.k-top h1{font-size:18px!important;letter-spacing:0!important;margin:0!important;color:#fff}
+.k-top small{color:#fff;opacity:.85}
+.p-tiles svg{width:40px!important;height:40px!important;color:var(--brand)}
+.k-row .ic svg{width:20px!important;height:20px!important}
+/* giriş */
+.r-auth{min-height:100vh}
+.r-authcard{width:100%;max-width:440px;display:flex;flex-direction:column;gap:12px}
+.r-tabs{padding:0!important}
+.r-tabs button{flex:1}
+.r-form{display:flex;flex-direction:column;gap:12px}
+.r-form .k-field input{width:100%;min-height:50px}
+.r-lan{max-width:440px;font-size:14px!important;min-height:46px!important}
+.r-lan svg{width:20px;height:20px}
+.r-foot{text-align:center;font-size:12px}
+/* şube seçimi */
+.r-branch{padding:10px 14px 0}
+.r-branch select{width:100%;height:44px;min-height:44px;border:1px solid var(--line);border-radius:12px;background:#fff;font-weight:800;padding:0 12px}
+.r-kpibtn{border:0;text-align:left;cursor:pointer}
+.r-low{color:var(--err)}
+.r-fresh{text-align:center;display:flex;align-items:center;justify-content:center;gap:8px}
+.live-dot84{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block}.live-dot84.stale{background:var(--warn)}
+.r-empty{text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;padding:26px 16px}
+.r-emptyic svg{width:44px;height:44px;color:var(--brand)}
+/* iç ekranlar (ürün, stok, şube): Wi-Fi modundaki kartlara benzet */
+.k-main{max-width:900px;width:100%;margin:0 auto}
+.k-main>*{min-width:0}
+.card{background:#fff!important;border:0!important;border-radius:14px!important;box-shadow:0 1px 3px rgba(0,0,0,.06)!important;padding:14px!important}
+.wide{grid-column:auto!important}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.btn{background:var(--brand)!important;color:#fff!important;border-radius:12px!important;min-height:48px!important;font-weight:800!important;border:0!important}
+.btn.secondary{background:#e9edf1!important;color:var(--ink)!important}
+.btn.danger{background:#fbe6e6!important;color:var(--err)!important}
+.textbtn{background:none;border:0;color:var(--brand)!important;font-weight:800}
+.tabs{display:flex;gap:6px;background:none!important;padding:0!important}
+.tabs button{flex:1;height:38px;border:1px solid var(--line)!important;background:#fff!important;border-radius:19px!important;font-weight:800;font-size:13.5px;color:var(--ink)!important}
+.tabs button.active{background:#1c2228!important;color:#fff!important;border-color:#1c2228!important}
+.product{border:0!important;box-shadow:0 1px 3px rgba(0,0,0,.06)!important;border-radius:12px!important}
+.product .badge{background:#fdecef!important;color:var(--brand)!important;border-radius:12px!important}
+.product .price{color:var(--brand)!important;font-weight:900!important}
+.productlist{display:flex;flex-direction:column;gap:8px}
+.pill{background:#e4f4ea!important;color:var(--ok)!important;border-radius:20px!important;font-weight:800!important}
+.pill.off{background:#fdf1dc!important;color:var(--warn)!important}
+.notice{background:#fdf1dc!important;border:0!important;color:#7a4b00!important;border-radius:12px!important}
+.search input{padding-left:42px!important;border-radius:12px!important}
+.stock-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stock-summary .card b{font-size:20px;font-weight:900;display:block}
+.stock-summary .card:nth-child(2) b{color:var(--warn)}.stock-summary .card:nth-child(3) b{color:var(--err)}
+.list-tools84{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.overlay{background:rgba(12,16,20,.5)!important;align-items:flex-end!important}
+.sheet{background:#fff!important;border-radius:20px 20px 0 0!important}
+.sheet h2{font-size:18px!important}
+.close{border:0;background:var(--bg)!important;width:38px;height:38px;border-radius:50%;font-size:22px}
+.error{color:var(--err)!important;font-weight:700}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1c2228;color:#fff;padding:12px 18px;border-radius:12px;z-index:60;display:none;max-width:90vw}

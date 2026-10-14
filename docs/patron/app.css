@@ -1,0 +1,26 @@
+.p-ranges{display:flex;gap:6px;padding:10px 14px 0;overflow-x:auto}
+.p-ranges button{flex:1 0 auto;height:38px;border:1px solid var(--line);background:#fff;border-radius:19px;font-weight:800;font-size:13.5px;padding:0 14px}
+.p-ranges button.on{background:#1c2228;color:#fff;border-color:#1c2228}
+.p-hero{display:flex;flex-direction:column;gap:6px}
+.p-hero .a,.p-hero .b{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.p-kpi{background:#fff;border-radius:12px;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column;gap:2px;min-width:0}
+.p-kpi span{font-size:11.5px;font-weight:800;color:var(--sub);text-transform:uppercase;letter-spacing:.04em}
+.p-kpi b{font-size:20px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.p-hero .a .p-kpi{background:#2e66c7;color:#fff}.p-hero .a .p-kpi:last-child{background:var(--brand)}
+.p-hero .a .p-kpi span{color:rgba(255,255,255,.85)}
+.p-kpi.cash b{color:var(--ok)}.p-kpi.card b{color:#2e66c7}.p-kpi.err b{color:var(--err)}.p-kpi.open b{color:var(--brand)}
+.p-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.p-tiles button{border:0;background:#fff;border-radius:12px;min-height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;box-shadow:0 1px 3px rgba(0,0,0,.08);padding:8px 4px}
+.p-tiles svg{width:40px;height:40px;color:var(--brand)}
+.p-tiles span{font-size:13px;font-weight:800;color:var(--brand);text-align:center;line-height:1.2}
+.p-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.p-bars{display:flex;flex-direction:column;gap:10px}
+.p-bar .l{display:flex;justify-content:space-between;gap:10px;font-size:14px}
+.p-bar .l span{font-weight:800;white-space:nowrap}
+.p-bar i{display:block;height:8px;border-radius:4px;background:var(--brand);margin-top:4px}
+.p-cols{display:flex;align-items:flex-end;gap:3px;height:160px}
+.p-cols div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
+.p-cols i{display:block;width:100%;background:#2e66c7;border-radius:3px 3px 0 0;min-height:2px}
+.p-cols span{font-size:10px;color:var(--sub);font-weight:700}
+.k-row .ic b{font-size:13px}
+@media (min-width:700px){.p-tiles{grid-template-columns:repeat(4,1fr)}.p-grid{grid-template-columns:repeat(4,1fr)}}
